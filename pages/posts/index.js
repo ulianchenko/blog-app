@@ -1,18 +1,18 @@
-// import Head from 'next/head';
+import Head from 'next/head';
 
 import AllPosts from '../../components/posts/all-posts';
 import { getAllPosts } from '../../lib/posts-util';
 
-function AllPostsPage() {
+function AllPostsPage(props) {
   return (
     <>
-      {/* <Head>
+      <Head>
         <title>All Posts</title>
         <meta
           name='description'
           content='A list of all programming-related tutorials and posts!'
         />
-      </Head> */}
+      </Head>
       <AllPosts posts={props.posts} />
     </>
   );
